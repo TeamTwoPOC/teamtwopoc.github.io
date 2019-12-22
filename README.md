@@ -3,4 +3,4 @@
 * [Презентация](https://teamtwopoc.github.io/)
 * [Пример исходного кода](https://github.com/TeamTwoPOC/teamtwopoc.github.io/blob/master/WebTicket%20source%20code/Script.js)
 
-Посколько проект является коммерческим, в репозиторий добавлен только пример исходного кода
+Проект является коммерческим, в репозиторий добавлен только пример исходного кода.
