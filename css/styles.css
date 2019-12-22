@@ -1,96 +1,187 @@
-.navbar{ background:#F97300;}
+.navbar{ background:#6B8E23;}
 .nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
 .nav-link{ margin-right: 1em !important;}
-.nav-link:hover{ background: #f4f4f4; color: #f97300; }
+.nav-link:hover{ background: #f4f4f4; color: #6B8E23; }
 .navbar-collapse{ justify-content: flex-end;}
 .navbar-toggler{  background:#fff !important;}
 
 .header{
- background-image: url('../images/headerback.jpg');
+ background-image: url('../images/MainBack.png');
  background-attachment: fixed;
  background-size: cover;
  background-position: center;
 }
 
 .description{
-    position: absolute;
-    top: 30%;
-    margin: auto;
-    padding: 2em;
-}
-.description h1{
- color:#F97300 ;
-}
-.description p{
- color:#666;
- font-size: 20px;
- width: 50%;
- line-height: 1.5;
-}
-.description a{
- border:1px  solid #F97300;
- background:#F97300;
- color:#fff;
+    margin: 6em;
+    padding: 2rem;
 }
 
+
+.description h1{
+ color:#f4f4f4 ;
+    font-size: 80px;
+    text-shadow: 1px 1px 2px black, 0 0 1rem #6B8E23;
+}
+.description p{
+ color:#f4f4f4;
+ font-size: 40px;
+ width: 60%;
+ line-height: 1.5;
+}
+
+
+.boxImg img:hover{    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.boxImg{
+ width: 8em;
+ height: auto;
+ filter: alpha(Opacity=70);
+ opacity: 0.70;
+}
+
+
 .overlay{
- position: absolute;
  min-height: 100%;
  min-width: 100%;
  left: 0;
  top: 0;
- background: rgba(244, 244, 244, 0.79);
+ background: rgba(220, 255, 220, 0.3);
 }
 
 .about{
- margin: 5em 0;
- padding: 1em;
+ margin: 0em 0em;
+ padding: 1em 1em;
  position: relative;
 }
 .about h1{
- color:#F97300;
- margin: 2em;
+ margin: 2em; 
+     color: #556B2F;
 }
 
+body {
+  font-size: 25px;
+  line-height: 1.42857143;
+}
 
 .about .desc{
- padding: 2em;
- border-left:4px solid #10828C;
+ padding: em;
+ border-right:10px solid #556B2F;
+    
 }
 .about .desc h3{
- color: #10828C;
+ color: #556B2F;
 }
 .about .desc p{
  line-height:2;
  color:#888;
 }
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');
+html,h1,h2,h3,h4,h5,h6,a{
+  font-family: 'Lato',sans-serif;
+}
 
-
-.hrRaz
+hr
 {
 border: 0;
-height: 1px;
-background: #000;
-background-image: -webkit-linear-gradient(left, #fff, #000, #fff);
-background-image: -moz-linear-gradient(left, #fff, #000, #fff);
-background-image: -ms-linear-gradient(left, #fff, #000, #fff);
-background-image: -o-linear-gradient(left, #fff, #000, #fff);
+width: 60%;
+height: 2px;
+background: #556B2F;
+background-image: -webkit-linear-gradient(left, #fff, #556B2F, #fff);
+background-image: -moz-linear-gradient(left, #fff, #556B2F, #fff);
+background-image: -ms-linear-gradient(left, #fff, #556B2F, #fff);
+background-image: -o-linear-gradient(left, #fff, #556B2F, #fff);
 }
 
-/*Portfolio*/
-.portfolio{
- margin: 4em 0;
+
+.advantages{
+    padding: 1em 1em;
     position: relative; 
+     }
+.opportunities{
+    padding: 1em 1em;
+    position: relative; 
+     }
+.advantages h1{
+ margin: 1em; 
+     color: #556B2F;
 }
-.portfolio h1{
- color:#F97300;
- margin: 2em; 
+.opportunities h1{
+ margin: 1em; 
+     color: #556B2F;
 }
-.portfolio img{
+.advantages  h2{
+ margin: 1em; 
+ color: #556B2F;
+}
+.opportunities h2{
+ margin: 1em; 
+ color: #556B2F;
+}
+
+.advantages img{
   height: 15rem;
-  width: 100%;
-  margin: 1em;
+    margin: 1em;
+}
+.opportunities img{
+  height: 15rem;
+    margin: 1em;
 }
 
 
 
+.team{
+ padding: 1em 0;
+ position: relative;  
+}
+.team h1{
+ color:#556B2F;
+ margin: 1rem; 
+}
+.team .des{
+ font-size: 2rem;
+ margin: 1em 0;
+ color: #556B2F;
+ text-align: center;
+
+}
+}
+.team .item{
+ position: relative;
+}
+
+footer{
+    background-color:#556B2F; 
+    padding: 1em
+}
+.boxImgReverse img:hover{    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+.boxImgReverse{
+ width: 8em;
+ height: auto;
+ filter: alpha(Opacity=70);
+ opacity: 0.70;
+    transform: rotate(180deg);
+    
+}

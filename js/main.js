@@ -18,3 +18,15 @@ $(".description a").click(function(){
   },1000)
   
  });
+$(".boxImg a").click(function(){
+  $("body,html").animate({
+   scrollTop:$("#" + $(this).data('value')).offset().top
+  },1000)
+  
+ });
+$(".boxImgReverse a").click(function(){
+  $("body,html").animate({
+   scrollTop:$("#" + $(this).data('value')).offset().top
+  },1000)
+  
+ });
