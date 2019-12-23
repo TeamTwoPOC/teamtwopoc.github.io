@@ -13,14 +13,14 @@
 }
 
 .description{
-    margin: 6em;
+    margin: 15% 5% 5% 5%;
     padding: 2rem;
 }
 
 
 .description h1{
  color:#f4f4f4 ;
-    font-size: 80px;
+    font-size: 5rem;
     text-shadow: 1px 1px 2px black, 0 0 1rem #6B8E23;
 }
 .description p{
@@ -52,7 +52,7 @@
 }
 
 .boxImg{
- width: 8em;
+ width: 4em;
  height: auto;
  filter: alpha(Opacity=70);
  opacity: 0.70;
@@ -113,12 +113,16 @@ background-image: -o-linear-gradient(left, #fff, #556B2F, #fff);
 
 
 .advantages{
-    padding: 1em 1em;
+    padding: 2em 2em;
     position: relative; 
+    min-height: 100%;
+    min-width: 100%;
      }
 .opportunities{
-    padding: 1em 1em;
-    position: relative; 
+    padding: 3em 2em;
+    position: relative;
+    min-height: 100%;
+    min-width: 100%;
      }
 .advantages h1{
  margin: 1em; 
@@ -146,10 +150,17 @@ background-image: -o-linear-gradient(left, #fff, #556B2F, #fff);
     margin: 1em;
 }
 
+.checklist {
+  list-style: none;
+}
+
+.checklist li:before {
+  content: '✓';
+}
 
 
 .team{
- padding: 1em 0;
+ padding: 2em 0;
  position: relative;  
 }
 .team h1{
@@ -163,10 +174,7 @@ background-image: -o-linear-gradient(left, #fff, #556B2F, #fff);
  text-align: center;
 
 }
-}
-.team .item{
- position: relative;
-}
+
 
 footer{
     background-color:#556B2F; 
@@ -178,10 +186,17 @@ footer{
     animation-iteration-count: infinite;
 }
 .boxImgReverse{
- width: 8em;
+ width: 4em;
  height: auto;
  filter: alpha(Opacity=70);
  opacity: 0.70;
     transform: rotate(180deg);
     
 }
+
+.team li {
+	list-style: none;
+	text-align: left;
+	font-size:18px;
+}
+
